@@ -13,6 +13,7 @@
 		4E2F94182930BC9E00406D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F94162930BC9E00406D84 /* Main.storyboard */; };
 		4E2F941A2930BCA000406D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F94192930BCA000406D84 /* Assets.xcassets */; };
 		4E2F941D2930BCA000406D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F941B2930BCA000406D84 /* LaunchScreen.storyboard */; };
+		A3C1529250CA318C7F66030F /* Pods_GoldenTask_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F88AAE22BE7F45877A64A05 /* Pods_GoldenTask_Pro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4E2F94192930BCA000406D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2F941C2930BCA000406D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E2F941E2930BCA000406D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F88AAE22BE7F45877A64A05 /* Pods_GoldenTask_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenTask_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64093FB771A3F2712668F68F /* Pods-GoldenTask Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenTask Pro.release.xcconfig"; path = "Target Support Files/Pods-GoldenTask Pro/Pods-GoldenTask Pro.release.xcconfig"; sourceTree = "<group>"; };
+		6E81209DDCA159414AADBD59 /* Pods-GoldenTask Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenTask Pro.debug.xcconfig"; path = "Target Support Files/Pods-GoldenTask Pro/Pods-GoldenTask Pro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C1529250CA318C7F66030F /* Pods_GoldenTask_Pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088C8DBC2B1C22D933DB0CC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F88AAE22BE7F45877A64A05 /* Pods_GoldenTask_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E2F94042930BC9E00406D84 = {
 			isa = PBXGroup;
 			children = (
 				4E2F940F2930BC9E00406D84 /* GoldenTask Pro */,
 				4E2F940E2930BC9E00406D84 /* Products */,
+				DA382E409916AD18F9E563AE /* Pods */,
+				088C8DBC2B1C22D933DB0CC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "GoldenTask Pro";
 			sourceTree = "<group>";
 		};
+		DA382E409916AD18F9E563AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E81209DDCA159414AADBD59 /* Pods-GoldenTask Pro.debug.xcconfig */,
+				64093FB771A3F2712668F68F /* Pods-GoldenTask Pro.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E2F94212930BCA000406D84 /* Build configuration list for PBXNativeTarget "GoldenTask Pro" */;
 			buildPhases = (
+				A6BA5220D852A51D1A478E64 /* [CP] Check Pods Manifest.lock */,
 				4E2F94092930BC9E00406D84 /* Sources */,
 				4E2F940A2930BC9E00406D84 /* Frameworks */,
 				4E2F940B2930BC9E00406D84 /* Resources */,
+				152EFE498DFF97D42A69E40A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		152EFE498DFF97D42A69E40A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldenTask Pro/Pods-GoldenTask Pro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldenTask Pro/Pods-GoldenTask Pro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoldenTask Pro/Pods-GoldenTask Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BA5220D852A51D1A478E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldenTask Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E2F94092930BC9E00406D84 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		4E2F94222930BCA000406D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E81209DDCA159414AADBD59 /* Pods-GoldenTask Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +367,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +383,7 @@
 		};
 		4E2F94232930BCA000406D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64093FB771A3F2712668F68F /* Pods-GoldenTask Pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

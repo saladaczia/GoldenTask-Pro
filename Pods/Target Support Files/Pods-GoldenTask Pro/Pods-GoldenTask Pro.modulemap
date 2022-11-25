@@ -1,0 +1,6 @@
+framework module Pods_GoldenTask_Pro {
+  umbrella header "Pods-GoldenTask Pro-umbrella.h"
+
+  export *
+  module * { export * }
+}
